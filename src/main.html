@@ -1,0 +1,9 @@
+  <div>
+    <h1>{{message}}</h1>
+ {{countdown}}
+      <form name="searchUser" ng-submit="search(username)">
+      <input required="" type="search" placeholder="Username to search" ng-model="username" ng-keyup="unsetCountdown()" />
+      <input type="submit" value="Search" />
+    </form>
+    <div ng-show="user" ng-include="'user.html'"></div>
+  </div>
